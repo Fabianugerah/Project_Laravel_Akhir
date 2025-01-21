@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login_up {
+    font-size: 15px;
+}
+
+.custom-hr {
+    width: 35%;
+    border: 2px solid #000000;
+    margin: 20px auto;
+    border-radius: 50px;
+    transition: all 2s;
+}
+
+.custom-hr:hover {
+    width: 60%;
+    transform: scale(1);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: radial-gradient(circle at top left,
+            #111113 0%,
+            #111113 0%);
+}
+
+.container {
+    max-width: 950px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.3);
+}
+
+.alert{
+    margin: 0px 150px;
+}
+
+/* Background Particel */
+.particles {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px;
+    }
+
+    .custom-hr {
+        width: 50%;
+    }
+}
+
+@media(max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+}
